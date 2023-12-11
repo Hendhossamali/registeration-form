@@ -1,0 +1,16 @@
+<main class="form-signin w-100 m-auto">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <h1 class="h3 mb-3 fw-normal">Registeration Form</h1>
+
+        <label for="firstName">Firt Name:</label>
+        <input id="firstName" type="text" firstControlName="firstName">
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" type="text" firstControlName="lasstName">
+
+        <br>
+        <br>
+        <button class="btn btn-primary w-100 py-2" type="submit">Redister</button>
+        <!-- <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p> -->
+    </form>
+</main>

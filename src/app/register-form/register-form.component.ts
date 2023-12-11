@@ -1,0 +1,20 @@
+import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+@Component({
+  selector: 'app-register-form',
+  standalone: true,
+  imports: [ReactiveFormsModule],
+  templateUrl: './register-form.component.html',
+  styleUrl: './register-form.component.css'
+})
+export class RegisterFormComponent {
+  profileForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+
+  })
+  onSubmit() {
+    console.log(this.profileForm.value);
+  }
+}

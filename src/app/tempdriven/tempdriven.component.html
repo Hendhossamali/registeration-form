@@ -1,0 +1,20 @@
+<div class="container">
+    First Name: {{firstName}}
+    <br>
+    Last Name: {{lastName}}
+    <form>
+        <h1 class="h3 mb-3 fw-normal">Registeration Form</h1>
+
+        <label for="firstName">Firt Name:</label>
+        <input id="firstName" type="text" [(ngModel)]="firstName" name="firstName">
+        <br>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" type="text"  [(ngModel)]="lastName" name="lastName">
+
+        <br>
+        <br>
+        <button class="btn btn-primary w-100 py-2" type="submit">Redister</button>
+    </form>
+
+</div>
